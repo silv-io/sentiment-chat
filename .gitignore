@@ -1,0 +1,33 @@
+# Terraform files
+.terraform/
+*.tfstate
+*.tfstate.backup
+*.tfplan
+crash.log
+terraform.log*
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Python files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+.venv/
+venv/
+env/
+build/
+dist/
+*.egg
+
+# Archives
+*.zip
+
+# OS / Editor specific
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

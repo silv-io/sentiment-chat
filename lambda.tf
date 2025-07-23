@@ -79,7 +79,7 @@ resource "aws_lambda_function" "sendmessage" {
       POLICY_STORE_ID              = aws_verifiedpermissions_policy_store.main.id
       NEGATIVE_SENTIMENT_THRESHOLD = var.negative_sentiment_threshold
       API_GATEWAY_ID               = aws_apigatewayv2_api.websocket_api.id
-      API_GATEWAY_STAGE            = aws_apigatewayv2_stage.prod.name
+      API_GATEWAY_STAGE            = "prod"
       AWS_REGION                   = var.aws_region
     }
   }

@@ -7,7 +7,7 @@ from botocore.exceptions import ClientError
 # Initialize clients
 bedrock = boto3.client('bedrock-runtime')
 sns = boto3.client('sns')
-verified_permissions = boto3.client('verified-permissions')
+verified_permissions = boto3.client('verifiedpermissions')
 apigatewaymanagementapi = boto3.client('apigatewaymanagementapi', endpoint_url=f"https://{os.environ['API_GATEWAY_ID']}.execute-api.{os.environ['AWS_REGION']}.amazonaws.com/{os.environ['API_GATEWAY_STAGE']}")
 
 # Environment variables

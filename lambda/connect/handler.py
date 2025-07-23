@@ -4,7 +4,7 @@ import redis
 import boto3
 
 # Initialize clients
-verified_permissions = boto3.client('verified-permissions')
+verified_permissions = boto3.client('verifiedpermissions')
 memorydb_host = os.environ['MEMORYDB_HOST']
 policy_store_id = os.environ['POLICY_STORE_ID']
 
